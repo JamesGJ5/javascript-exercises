@@ -1,5 +1,6 @@
 const ftoc = function(f) {
-  return (f - 32) * 5 / 9;
+  c = (f - 32) * 5 / 9;
+  return Math.round(c * 10) / 10;
 };
 
 const ctof = function() {
