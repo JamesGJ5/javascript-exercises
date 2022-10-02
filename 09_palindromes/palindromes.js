@@ -1,6 +1,6 @@
 const palindromes = function (string) {
-    left = 0;
-    right = string.length - 1;
+    let left = 0;
+    let right = string.length - 1;
     while (right >= left) {
         if (string[left] === string[right]) {
             left++;
