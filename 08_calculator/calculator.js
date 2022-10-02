@@ -10,8 +10,10 @@ const sum = function(summedArray) {
 	return summedArray.reduce((cumulativeSum, addend) => cumulativeSum + addend, 0);
 };
 
-const multiply = function() {
-
+const multiply = function(multipliedArray) {
+  return multipliedArray.reduce((cumulativeProduct, factor) => 
+    cumulativeProduct * factor, 1
+  );
 };
 
 const power = function() {
