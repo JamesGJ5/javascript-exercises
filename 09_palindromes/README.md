@@ -16,4 +16,4 @@ palindromes('racecar') // true
 palindromes('tacos') // false
 ```
 
-
+ ### Punctuation, word breaks and capitalisation don't prevent a string from being a palindrome in this case
