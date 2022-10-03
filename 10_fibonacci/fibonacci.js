@@ -1,11 +1,12 @@
 const fibonacci = function(n) {
-    let penultimateAndFinal = [1, 1];
+    let currentPenultimate = 1;
+    let currentFinal = 1;
     for (let i = 3; i < n + 1; i++) {
-        const newPenultimate = penultimateAndFinal[1];
-        const newFinal = penultimateAndFinal[0] + newPenultimate;
-        penultimateAndFinal = [newPenultimate, newFinal];
+        const newFinal = currentPenultimate + currentFinal;
+        currentPenultimate = currentFinal;
+        currentFinal = newFinal;
     };
-    return penultimateAndFinal[1];
+    return currentFinal;
 };
 
 // Do not edit below this line
