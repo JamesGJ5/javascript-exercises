@@ -12,7 +12,7 @@ const palindromes = function (string) {
             right--;
             continue;
         };
-        if (string[left] === string[right]) {
+        if (left_char === right_char) {
             left++;
             right--;
         } else {
