@@ -1,4 +1,5 @@
-const fibonacci = function(n) {
+const fibonacci = function(input) {
+    n = +input;
     if (n <= 0) return "OOPS";
     let currentPenultimate = 1;
     let currentFinal = 1;
